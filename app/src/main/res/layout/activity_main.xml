@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYelow"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_imagem"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/processando"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:src="@drawable/logo_faculdade" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="MÉDIA DE NOTAS"
+            android:textColor="@color/colorBlack" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fundo_notas"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/fundo_ava"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="AVA 01"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_nota_01"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background="@color/colorWhite"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:text="0" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/fundo_ava"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="AVA 02"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_nota_02"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background="@color/colorWhite"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:text="0" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_nota_final"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:foreground="@color/colorBlue"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/fundo_ava"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="FINAL"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_nota_final"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background="@color/colorWhite"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:text="0" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_observacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="observação"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="media"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_situacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="situação"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_observacao_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="observação"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DISCIPLINA DO PROFESSOR ELY BEZERRA"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
